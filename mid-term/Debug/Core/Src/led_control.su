@@ -1,0 +1,14 @@
+led_control.c:24:6:display7SEG	16	static
+led_control.c:34:6:unEnableAll	8	static
+led_control.c:41:6:enableLed7Seg1	8	static
+led_control.c:47:6:enableLed7Seg2	8	static
+led_control.c:53:6:enableLed7Seg3	8	static
+led_control.c:59:6:enableLed7Seg4	8	static
+led_control.c:68:6:initTrafficLight1	8	static
+led_control.c:74:6:initTrafficLight2	8	static
+led_control.c:79:6:setTrafficRed1	8	static
+led_control.c:84:6:setTrafficRed2	8	static
+led_control.c:90:6:setTrafficGreen1	8	static
+led_control.c:95:6:setTrafficGreen2	8	static
+led_control.c:101:6:setTrafficYellow1	8	static
+led_control.c:107:6:setTrafficYellow2	8	static

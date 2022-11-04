@@ -1,0 +1,6 @@
+led7seg.c:22:6:display7SEG	16	static
+led7seg.c:32:6:unEnableAll	8	static
+led7seg.c:39:6:enableLed7Seg1	8	static
+led7seg.c:45:6:enableLed7Seg2	8	static
+led7seg.c:51:6:enableLed7Seg3	8	static
+led7seg.c:57:6:enableLed7Seg4	8	static
