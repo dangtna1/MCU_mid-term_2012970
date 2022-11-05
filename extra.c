@@ -105,18 +105,104 @@ char* suffixWithUnit ( double number ) {
             result[indexOfResult6+4] = 'o';
             result[indexOfResult6+5] = '\0';
         break;
+        case 7:
+            result[0] = strNumberAfterProcessing[0];
+            result[1] = '.';
+            int indexOfResult7 = 2;
+            int indexOfStr7 = 1;
+            for (indexOfStr7; indexOfStr7<countOfDouble; indexOfStr7++) {
+                if (strNumberAfterProcessing[indexOfStr7] != '.') {
+                    result[indexOfResult7] =  strNumberAfterProcessing[indexOfStr7];
+                    indexOfResult7++;
+                }
+            }
+            result[indexOfResult7] = ' ';
+            result[indexOfResult7+1] = 'M';
+            result[indexOfResult7+2] = 'e';
+            result[indexOfResult7+3] = 'g';
+            result[indexOfResult7+4] = 'a';
+            result[indexOfResult7+5] = '\0';
+        break;
+        case 8:
+            result[0] = strNumberAfterProcessing[0];
+            result[1] = strNumberAfterProcessing[1];
+            result[2] = '.';
+            int indexOfResult8 = 3;
+            int indexOfStr8 = 2;
+            for (indexOfStr8; indexOfStr8<countOfDouble; indexOfStr8++) {
+                if (strNumberAfterProcessing[indexOfStr8] != '.') {
+                    result[indexOfResult8] =  strNumberAfterProcessing[indexOfStr8];
+                    indexOfResult8++;
+                }
+            }
+            result[indexOfResult8] = ' ';
+            result[indexOfResult8+1] = 'M';
+            result[indexOfResult8+2] = 'e';
+            result[indexOfResult8+3] = 'g';
+            result[indexOfResult8+4] = 'a';
+            result[indexOfResult8+5] = '\0';
+        break;
+        case 9:
+            result[0] = strNumberAfterProcessing[0];
+            result[1] = strNumberAfterProcessing[1];
+            result[2] = strNumberAfterProcessing[2];
+            result[3] = '.';
+            int indexOfResult9 = 4;
+            int indexOfStr9 = 3;
+            for (indexOfStr9; indexOfStr9<countOfDouble; indexOfStr9++) {
+                if (strNumberAfterProcessing[indexOfStr9] != '.') {
+                    result[indexOfResult9] =  strNumberAfterProcessing[indexOfStr9];
+                    indexOfResult9++;
+                }
+            }
+            result[indexOfResult9] = ' ';
+            result[indexOfResult9+1] = 'M';
+            result[indexOfResult9+2] = 'e';
+            result[indexOfResult9+3] = 'g';
+            result[indexOfResult9+4] = 'a';
+            result[indexOfResult9+5] = '\0';
+        break;
+        default: 
+            printf("\n%s\n", "The number you input is not valid for the type 'double'. Maybe it can be too long or something!");
+        break;
     }
     return result;
 }
 int main()
 {
+    //do not change
+    printf("\n%s", suffixWithUnit(0));
+    printf("\n%s", suffixWithUnit(0.5));
+    printf("\n%s", suffixWithUnit(1));
     printf("\n%s", suffixWithUnit(1.2345670));
+    printf("\n%s", suffixWithUnit(10));
     printf("\n%s", suffixWithUnit(12.34567));
+    printf("\n%s", suffixWithUnit(123));
     printf("\n%s", suffixWithUnit(123.4567));
-    printf("\n%s", suffixWithUnit(123000));
+
+    //change into Kilo
     printf("\n%s", suffixWithUnit(1234));
+    printf("\n%s", suffixWithUnit(1234.00));
     printf("\n%s", suffixWithUnit(12345));
-    printf("\n%s", suffixWithUnit(1123.23239));
+    printf("\n%s", suffixWithUnit(12345.98706));
     printf("\n%s", suffixWithUnit(123456));
+    printf("\n%s", suffixWithUnit(123456.1230));
+
+    //change into Mega
+    printf("\n%s", suffixWithUnit(9876543));
+    printf("\n%s", suffixWithUnit(9876543.0123));
+    printf("\n%s", suffixWithUnit(98765432));
+    printf("\n%s", suffixWithUnit(98765432.1230));
+    printf("\n%s", suffixWithUnit(987654321));
+    printf("\n%s", suffixWithUnit(987654321.9));
+
+    //test negative number
+    printf("\n%s", suffixWithUnit(-9876543));
+    printf("\n%s", suffixWithUnit(-9876543.0123));
+    printf("\n%s", suffixWithUnit(-98765432));
+    printf("\n%s", suffixWithUnit(-98765432.1230));
+
+    //test exception:
+    printf("\n%s", suffixWithUnit(-98765432123.1230));
     return 0;
 }
