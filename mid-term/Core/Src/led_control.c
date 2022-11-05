@@ -7,19 +7,18 @@
 
 #include "led_control.h"
 
-
 //LED7SEG
 uint8_t segmentNumber[10] = {
-        0x3f,  // 0
-        0x06,  // 1
-        0x5b,  // 2
-        0x4f,  // 3
-        0x66,  // 4
-        0x6d,  // 5
-        0x7d,  // 6
-        0x07,  // 7
-        0x7f,  // 8
-        0x67   // 9
+        0x3f,
+        0x06,
+        0x5b,
+        0x4f,
+        0x66,
+        0x6d,
+        0x7d,
+        0x07,
+        0x7f,
+        0x67
 };
 void display7SEG(uint8_t number){
 	HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, ((number>>0)&0x01)^0x01);

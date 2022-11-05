@@ -16,6 +16,9 @@ void fsm_simple_buttons_run() {
 		case RESET_BUTTON_PRESSED:
 			counter = 0;
 			display7SEG(segmentNumber[counter]);
+			if (isButtonPressed(0) == 1) {
+				status = RESET_BUTTON_PRESSED;
+			}
 			if (isButtonPressed(1) == 1) {
 				status = INC_BUTTON_PRESSED;
 				counter++;
