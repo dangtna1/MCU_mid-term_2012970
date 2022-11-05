@@ -18,7 +18,7 @@ char* suffixWithUnit ( double number ) {
     int indexOfStart0 = indexOfComma + 1;
 
     //find index of the first 0 after the comma to erase (becasuse erasing this 0 and 0s after that do not affect the number)
-    for (int m = indexOfComma+1; m < count; m++) { //xem coi ddko
+    for (int m = indexOfComma+1; m < count; m++) { 
         if (strNumber[m] != '0') indexOfStart0 = m+1;
     }
     int n = 0;
@@ -163,7 +163,7 @@ char* suffixWithUnit ( double number ) {
             result[indexOfResult9+5] = '\0';
         break;
         default: 
-            printf("\n%s\n", "The number you input is not valid for the type 'double'. Maybe it can be too long or something!");
+            result = "The number you input is not valid for the type 'double'. Maybe it can be too long or something!";
         break;
     }
     return result;
