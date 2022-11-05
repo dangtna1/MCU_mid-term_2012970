@@ -63,11 +63,11 @@ void getKeyInput() {
 			} else{
 				TimeOutForKeyPress[i]--;
 				if (TimeOutForKeyPress[i] == 0){
-					if (KeyReg3[i] == PRESSED_STATE){
-						TimeOutForKeyPress[i] = 300;
-						button_flag[i] = 1;
-					 }
-		//			KeyReg3 = NORMAL_STATE; // nếu không cần xử lý nhấn đè
+//					if (KeyReg3[i] == PRESSED_STATE){
+//						TimeOutForKeyPress[i] = 300;
+//						button_flag[i] = 1;
+//					 }
+					KeyReg3[i] = NORMAL_STATE; // nếu không cần xử lý nhấn đè
 				}
 			}
 		}

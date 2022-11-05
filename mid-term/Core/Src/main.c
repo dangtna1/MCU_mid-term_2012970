@@ -100,7 +100,6 @@ int main(void)
   timer1_flag = 1;
   while (1)
   {
-	  //test button
 	  fsm_simple_buttons_run();
 	  if (timer1_flag == 1) {
 		  setTimer1(1000);

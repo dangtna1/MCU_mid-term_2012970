@@ -42,12 +42,6 @@ void fsm_simple_buttons_run() {
 				setTimer2(11000); //update time-out
 			}
 			if (timer2_flag == 1) {
-//				if (timer3_flag == 1) {
-//					setTimer3(1000);
-//					counter--;
-//					if (counter == 0) status = RESET_BUTTON_PRESSED;
-//					display7SEG(segmentNumber[counter]);
-//				}
 				status = AUTO_COUNTDOWN;
 			}
 			break;
@@ -66,17 +60,10 @@ void fsm_simple_buttons_run() {
 				setTimer2(11000); //update time-out
 			}
 			if (timer2_flag == 1) {
-//				if (timer3_flag == 1) {
-//					setTimer3(1000);
-//					counter--;
-//					if (counter == 0) status = RESET_BUTTON_PRESSED;
-//					display7SEG(segmentNumber[counter]);
-//				}
 				status = AUTO_COUNTDOWN;
 			}
 			break;
 		case AUTO_COUNTDOWN:
-			//todo
 			if (timer3_flag == 1) {
 				setTimer3(1000);
 				counter--;
