@@ -24,7 +24,7 @@ void initSomeVariables() { //call this function in main.c
 		KeyReg1[i] = NORMAL_STATE;
 		KeyReg2[i] = NORMAL_STATE;
 		KeyReg3[i] = NORMAL_STATE;
-		TimeOutForKeyPress[i] = 200; //Auto change the buttons's state in every 2s
+		TimeOutForKeyPress[i] = 300; //Auto change the buttons's state in every 3s
 	}
 }
 
@@ -57,14 +57,14 @@ void getKeyInput() {
 			if (KeyReg2[i] != KeyReg3[i]){
 			  KeyReg3[i] = KeyReg2[i];
 			  if (KeyReg3[i] == PRESSED_STATE){
-				TimeOutForKeyPress[i] = 200;
+				TimeOutForKeyPress[i] = 300;
 				button_flag[i] = 1;
 			  }
 			} else{
 				TimeOutForKeyPress[i]--;
 				if (TimeOutForKeyPress[i] == 0){
 					if (KeyReg3[i] == PRESSED_STATE){
-						TimeOutForKeyPress[i] = 200;
+						TimeOutForKeyPress[i] = 300;
 						button_flag[i] = 1;
 					 }
 		//			KeyReg3 = NORMAL_STATE; // nếu không cần xử lý nhấn đè

@@ -58,32 +58,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED_RED1_Pin GPIO_PIN_1
-#define LED_RED1_GPIO_Port GPIOA
-#define LED_YELLOW1_Pin GPIO_PIN_2
-#define LED_YELLOW1_GPIO_Port GPIOA
-#define LED_GREEN1_Pin GPIO_PIN_3
-#define LED_GREEN1_GPIO_Port GPIOA
-#define LED_RED2_Pin GPIO_PIN_4
-#define LED_RED2_GPIO_Port GPIOA
-#define LED_YELLOW2_Pin GPIO_PIN_5
-#define LED_YELLOW2_GPIO_Port GPIOA
-#define LED_GREEN2_Pin GPIO_PIN_6
-#define LED_GREEN2_GPIO_Port GPIOA
-#define EN1_Pin GPIO_PIN_7
-#define EN1_GPIO_Port GPIOA
+#define LED_RED_Pin GPIO_PIN_5
+#define LED_RED_GPIO_Port GPIOA
 #define a_Pin GPIO_PIN_0
 #define a_GPIO_Port GPIOB
 #define b_Pin GPIO_PIN_1
 #define b_GPIO_Port GPIOB
 #define c_Pin GPIO_PIN_2
 #define c_GPIO_Port GPIOB
-#define EN2_Pin GPIO_PIN_8
-#define EN2_GPIO_Port GPIOA
-#define EN3_Pin GPIO_PIN_9
-#define EN3_GPIO_Port GPIOA
-#define EN4_Pin GPIO_PIN_10
-#define EN4_GPIO_Port GPIOA
 #define BUTTON1_Pin GPIO_PIN_13
 #define BUTTON1_GPIO_Port GPIOA
 #define BUTTON2_Pin GPIO_PIN_14

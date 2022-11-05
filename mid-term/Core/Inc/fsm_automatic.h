@@ -11,6 +11,6 @@
 #include "global.h"
 #include "led_control.h"
 
-void fsm_automatic_run();
+void fsm_simple_buttons_run();
 
 #endif /* INC_FSM_AUTOMATIC_H_ */
